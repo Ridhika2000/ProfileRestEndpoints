@@ -1,0 +1,31 @@
+GET http://localhost:3000/database/createDatabase
+
+
+DELETE http://localhost:3000/database/dropDatabase
+
+GET  http://localhost:3000/table/createProfileTable
+
+
+DELETE http://localhost:3000/table/dropProfileTable
+
+POST http://localhost:3000/profile/createNewProfile HTTP/1.1
+Content-Type: application/json
+
+{
+   
+   
+}
+
+GET http://localhost:3000/profile/getAllProfiles
+
+GET http://localhost:3000/profile/getProfilesByStatus
+
+PUT http://localhost:3000/profile/pauseUnpauseprofile
+Content-Type: application/json
+
+{ 
+    
+    "choice":"pause"
+}
+
+DELETE http://localhost:3000/profile/deleteProfile/1
