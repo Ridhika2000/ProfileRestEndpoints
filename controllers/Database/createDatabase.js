@@ -1,5 +1,4 @@
 exports.createDatabase = async (req, res) => {
-  console.log("hey");
   let sql = "CREATE DATABASE profileData";
   db.query(sql, (err, result) => {
     if (err) {
